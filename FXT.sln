@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT", "FXT\FXT.csproj", "{821C81B0-2F9F-4095-A948-4D032D1C22DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT", "FXT\FXT.csproj", "{821C81B0-2F9F-4095-A948-4D032D1C22DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Domain", "FXT.Domain\FXT.Domain.csproj", "{5B8B43C5-FE60-4821-986A-E75FC2129895}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT.Domain", "FXT.Domain\FXT.Domain.csproj", "{5B8B43C5-FE60-4821-986A-E75FC2129895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Infrastructure", "FXT.Infrastructure\FXT.Infrastructure.csproj", "{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT.Infrastructure", "FXT.Infrastructure\FXT.Infrastructure.csproj", "{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Domain.Test", "FXT.Domain.Test\FXT.Domain.Test.csproj", "{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT.Domain.Test", "FXT.Domain.Test\FXT.Domain.Test.csproj", "{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Infrastructure.Test", "FXT.Infrastructure.Test\FXT.Infrastructure.Test.csproj", "{92EFBA04-81DB-4226-8597-3704F075B893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92EFBA04-81DB-4226-8597-3704F075B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EFBA04-81DB-4226-8597-3704F075B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EFBA04-81DB-4226-8597-3704F075B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EFBA04-81DB-4226-8597-3704F075B893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
