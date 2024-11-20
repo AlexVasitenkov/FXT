@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT", "FXT\FXT.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Domain", "FXT.Domain\FXT.Domain.csproj", "{5B8B43C5-FE60-4821-986A-E75FC2129895}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Infrastructure", "FXT.Infrastructure\FXT.Infrastructure.csproj", "{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Domain.Test", "FXT.Domain.Test\FXT.Domain.Test.csproj", "{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5B8B43C5-FE60-4821-986A-E75FC2129895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8B43C5-FE60-4821-986A-E75FC2129895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8B43C5-FE60-4821-986A-E75FC2129895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392601CD-CB0B-48CD-81B7-5EE09FE26E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12315DD8-33EB-4B4F-9ECE-BEE74163ED48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
