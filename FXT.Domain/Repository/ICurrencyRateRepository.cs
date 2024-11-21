@@ -7,6 +7,10 @@ namespace FXT.Domain.Repositories;
 public interface ICurrencyRateRepository
 {
     Task<IEnumerable<CurrencyRate>> GetAllCurrencyRatesAsync();
-    Task<IEnumerable<CurrencyRate>> GetRatesByCurrencyPairAsync(string currencyPair);
     Task<CurrencyRate> AddCurrencyRateAsync(CurrencyRate rate);
+    Task<IEnumerable<CurrencyRate>> GetRatesByCurrencyPairAsync(string currencyPair);
+    Task UpdateCurrencyRateAsync(CurrencyRate rate);
+    Task DeleteCurrencyRateAsync(Guid id);
+
 }
+

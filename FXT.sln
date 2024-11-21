@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT.Domain.Test", "FXT.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Infrastructure.Test", "FXT.Infrastructure.Test\FXT.Infrastructure.Test.csproj", "{92EFBA04-81DB-4226-8597-3704F075B893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXT.Application", "FXT.Application\FXT.Application.csproj", "{D88E2141-86B5-4A37-97B3-685B54C3F2C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FXT.API", "FXT.API\FXT.API.csproj", "{5665F8DC-5440-4E18-BA73-1CECF9F69303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{92EFBA04-81DB-4226-8597-3704F075B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92EFBA04-81DB-4226-8597-3704F075B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92EFBA04-81DB-4226-8597-3704F075B893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88E2141-86B5-4A37-97B3-685B54C3F2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88E2141-86B5-4A37-97B3-685B54C3F2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88E2141-86B5-4A37-97B3-685B54C3F2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88E2141-86B5-4A37-97B3-685B54C3F2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5665F8DC-5440-4E18-BA73-1CECF9F69303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5665F8DC-5440-4E18-BA73-1CECF9F69303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5665F8DC-5440-4E18-BA73-1CECF9F69303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5665F8DC-5440-4E18-BA73-1CECF9F69303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

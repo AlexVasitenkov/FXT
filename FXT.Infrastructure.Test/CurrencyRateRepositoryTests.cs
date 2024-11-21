@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using FXT.Domain.Entities;
 using FXT.Infrastructure.Data;
-using FXT.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
@@ -69,7 +68,13 @@ public class CurrencyRateRepositoryTests
     [Fact]
     public async Task Can_Update_CurrencyRate()
     {
-        var repository = GetRepository();
+        var options = new DbContextOptionsBuilder<FXTimeSeriesDbContext>()
+            .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+            .Options;
+
+        using var context = new FXTimeSeriesDbContext(options);
+        var repository = new CurrencyRateRepository(context);
+
         var rate = new CurrencyRate
         {
             Id = Guid.NewGuid(),
@@ -81,15 +86,12 @@ public class CurrencyRateRepositoryTests
         await repository.AddCurrencyRateAsync(rate);
 
         rate.Rate = 1.2345m;
-        var context = repository.GetDbContext();
-        context.CurrencyRates.Update(rate);
-        await context.SaveChangesAsync();
+        await repository.UpdateCurrencyRateAsync(rate);
 
         var updatedRate = (await repository.GetAllCurrencyRatesAsync()).First();
 
         Assert.Equal(1.2345m, updatedRate.Rate);
     }
-
     [Fact]
     public async Task Can_Delete_CurrencyRate()
     {
